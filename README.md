@@ -7,4 +7,12 @@ compiling the source code, and this eventually exhaust the
 PermGen, which is the area where Class objects are stored
 by the JVM.
 
-Test if it's true, and if is, how we can recover from it
+To launch the program:
+
+    gradle run
+	
+And this should give the holy fault message
+
+    Exception in thread "main" java.lang.OutOfMemoryError: PermGen space
+	
+	
