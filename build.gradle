@@ -8,3 +8,8 @@ dependencies {
   compile 'org.codehaus.groovy:groovy:2.1.5'
 }
 
+task run( type: JavaExec ) {
+  main = 'com.zybnet.GroovyShellPermgenExhaustion'
+  classpath = sourceSets.main.runtimeClasspath
+  jvmArgs = [ '-XX:PermSize=5m', '-XX:MaxPermSize=5m' ]
+}
