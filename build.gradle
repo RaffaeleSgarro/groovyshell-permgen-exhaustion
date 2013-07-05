@@ -11,5 +11,5 @@ dependencies {
 task run( type: JavaExec ) {
   main = 'com.zybnet.GroovyShellPermgenExhaustion'
   classpath = sourceSets.main.runtimeClasspath
-  jvmArgs = [ '-XX:PermSize=5m', '-XX:MaxPermSize=5m' ]
+  jvmArgs = [ '-XX:PermSize=10m', '-XX:MaxPermSize=10m' ]
 }
